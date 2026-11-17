@@ -21,4 +21,4 @@ const postSchema = new mongoose.Schema({
     ]
 }, {timestamps : true});
 const PostTable = mongoose.model('post' , postSchema);
-export default  PostTable;
+module.exports = PostTable;

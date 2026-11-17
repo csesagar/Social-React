@@ -34,8 +34,9 @@ app.get('/', (request, response) => {
 
 // configure the routers
 app.use('/api/users', require('./routers/userRouter'));
-// app.use('/api/profiles', require('./routers/ProfileRouter'));
-// app.use('/api/posts', require('./routers/postRouter'));
+app.use('/api/profiles', require('./routers/ProfileRouter'));
+app.use('/api/posts', require('./routers/postRouter'));
+
 
 app.listen(port, () => {
     console.log(`Express Server is Started at http://localhost:${port} `);

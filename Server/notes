@@ -1,0 +1,3 @@
+//  let {userId} = request.params;    // geting userId from params
+//  npm init --yes // to create package.json file
+//  npm run serve //to run the server
